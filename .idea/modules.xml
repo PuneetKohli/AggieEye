@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EmergeApp.iml" filepath="$PROJECT_DIR$/EmergeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discreteScrollview/discreteScrollview.iml" filepath="$PROJECT_DIR$/discreteScrollview/discreteScrollview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discreteScrollview/discreteScrollview.iml" filepath="$PROJECT_DIR$/discreteScrollview/discreteScrollview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emerge_android_v2.iml" filepath="$PROJECT_DIR$/emerge_android_v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/genAnimations/genAnimations.iml" filepath="$PROJECT_DIR$/genAnimations/genAnimations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/genAnimations/genAnimations.iml" filepath="$PROJECT_DIR$/genAnimations/genAnimations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pageIndicator/pageIndicator.iml" filepath="$PROJECT_DIR$/pageIndicator/pageIndicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pageIndicator/pageIndicator.iml" filepath="$PROJECT_DIR$/pageIndicator/pageIndicator.iml" />
+    </modules>
+  </component>
+</project>

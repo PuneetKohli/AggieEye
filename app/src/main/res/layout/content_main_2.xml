@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context="com.diversityhack.placespace.aggieeye.MainActivity"
+    tools:showIn="@layout/activity_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    sothree:umanoPanelHeight="48dp"
+    sothree:umanoShadowHeight="0dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoScrollableView="@+id/bottom_list">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.diversityhack.placespace.emergeapp" />
+
+        <View
+            android:id="@+id/gradient_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_black" />
+
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/pickerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp"
+            app:dsv_orientation="horizontal" />
+
+        <FrameLayout
+            android:id="@+id/center_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="420dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/button_hide_center_fragment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#666"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/arrow_down_white" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#0000"
+            android:padding="0dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <View
+                android:id="@+id/bottom_bar_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@id/bottom_bar"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/bottomBar_text"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:text="⬆ List view"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/custom_menu"
+            layout="@layout/custom_menu"
+            android:visibility="invisible" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-48dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="false">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#0000"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bottom_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

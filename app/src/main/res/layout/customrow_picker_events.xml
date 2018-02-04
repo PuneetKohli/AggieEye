@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/rootView"
+  android:layout_width="200dp"
+  android:layout_height="200dp"
+  android:layout_margin="0dp">
+
+  <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="#ffffff"
+    android:elevation="16dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <ImageView
+        android:id="@+id/category_image"
+        android:textStyle="normal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignTop="@+id/ar_enabled"
+        android:gravity="center"
+        />
+
+      <ImageView
+        android:id="@+id/ar_enabled"
+        android:textStyle="normal"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@drawable/rounded_corners_12dp"
+        android:gravity="center"
+        android:src="@drawable/ic_camera_enhance_white_24dp"
+        />
+      <TextView
+        android:id="@+id/ar_text"
+        android:textStyle="normal"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ar_enabled"
+        android:gravity="center"
+        android:text="AR"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"/>
+
+
+      <TextView
+        android:id="@+id/hospital_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/ar_text"
+        android:text="Name of Event "
+        android:textSize="16sp"/>
+
+      <TextView
+        android:id="@+id/hospital_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hospital_name"
+        android:layout_below="@+id/hospital_name"
+        android:text="Event Address"
+        android:textSize="12sp"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center">
+
+          <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="2dp"
+            android:padding="1dp"
+            android:src="@drawable/location"/>
+          <TextView
+            android:id="@+id/row_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="258 m"
+            android:textColor="@color/local_darkBlue"
+            android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center">
+
+          <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="2dp"
+            android:padding="1dp"
+            android:src="@drawable/clock"/>
+          <TextView
+            android:id="@+id/row_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 min"
+            android:textColor="@color/local_darkBlue"
+            android:textSize="10sp"/>
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+</RelativeLayout>

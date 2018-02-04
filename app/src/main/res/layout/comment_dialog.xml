@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="8dp"
+  android:background="#fff"
+  android:clipToPadding="false"
+  android:elevation="16dp"
+  app:cardCornerRadius="4dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_alignParentBottom="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/detail_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentStart="true"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp"
+      android:text="Comments"
+      android:textSize="16sp"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="4dp"
+      android:layout_marginLeft="-32dp"
+      android:layout_marginRight="-32dp"
+      android:background="#aaa"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:layout_gravity="center"
+      android:orientation="horizontal">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bhavesh"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="top"
+        android:text="Looking forward to attend this!"
+        android:textSize="14sp"/>
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="1 hr ago"
+        android:layout_marginRight="8dp"
+        android:textAlignment="viewEnd"
+        android:textSize="10sp"/>
+    </LinearLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="4dp"
+      android:layout_marginLeft="-32dp"
+      android:layout_marginRight="-32dp"
+      android:background="#ddd"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:layout_gravity="center"
+      android:orientation="horizontal">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mayank"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="top"
+        android:text="See you there!"
+        android:textSize="14sp"/>
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="15 mins ago"
+        android:layout_marginRight="8dp"
+        android:textAlignment="viewEnd"
+        android:textSize="10sp"/>
+    </LinearLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="4dp"
+      android:layout_marginLeft="-32dp"
+      android:layout_marginRight="-32dp"
+      android:background="#ddd"/>
+  </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dd4b39</color>
+    <color name="colorPrimaryDark">#c13828</color>
+    <color name="colorAccent">#dd4b39</color>
+    <!--<color name="colorAccent">#3d589f</color>-->
+
+    <color name="local_darkBlue">#dd4b39</color>
+
+    <array name="palette">
+        <item>#FFF</item>
+        <item>#000</item>
+        <item>@color/tomato</item>
+        <item>@color/tangerine</item>
+        <item>@color/banana</item>
+        <item>@color/basil</item>
+        <item>@color/sage</item>
+        <item>@color/peacock</item>
+        <item>@color/blueberry</item>
+        <item>@color/lavender</item>
+        <item>@color/grape</item>
+        <item>@color/flamingo</item>
+        <item>@color/graphite</item>
+    </array>
+
+</resources>

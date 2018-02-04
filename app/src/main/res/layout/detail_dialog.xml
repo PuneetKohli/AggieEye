@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="8dp"
+  android:background="#fff"
+  android:clipToPadding="false"
+  android:elevation="16dp"
+  app:cardCornerRadius="4dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_alignParentBottom="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/clock"/>
+      <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Hospital / Clinic name Lorem ipsum"
+        android:textSize="24sp"/>
+    </LinearLayout>
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="0dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp">
+
+      <TextView
+        android:id="@+id/details_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/icon_directions"
+        android:text="Lorem d"
+        android:textAlignment="textStart"
+        android:textSize="12sp"/>
+
+      <ImageView
+        android:id="@+id/icon_directions"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignParentRight="true"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/compass"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="0dp"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp"
+      android:clipToPadding="false"
+      android:orientation="horizontal">
+
+      <LinearLayout
+        android:id="@+id/button_love"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:id="@+id/heart_icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="2dp"
+          android:src="@drawable/ic_heart_empty"
+          android:text="40"
+          android:textSize="20sp"/>
+
+        <TextView
+          android:id="@+id/love_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="2dp"
+          android:layout_gravity="center"
+          android:text="500 LOVES"
+          android:textColor="#aaa"
+          android:textSize="12sp"/>
+      </LinearLayout>
+      <LinearLayout
+        android:id="@+id/button_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="2dp"
+          android:src="@drawable/ic_comment"
+          android:text="13"
+          android:textSize="20sp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="2dp"
+          android:layout_gravity="center"
+          android:text="12 COMMENTS"
+          android:textColor="#aaa"
+          android:textSize="12sp"/>
+      </LinearLayout>
+      <android.support.v7.widget.CardView
+        android:id="@+id/button_connect"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="4dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/local_darkBlue"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="CONNECT ME"
+          android:textColor="#fff"/>
+
+      </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="2dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="4dp"
+      android:layout_marginLeft="-32dp"
+      android:layout_marginRight="-32dp"
+      android:background="#aaa"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp"
+      android:orientation="horizontal">
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="DESCRIPTION"
+          android:textColor="#aaa"
+          android:textSize="12sp"/>
+
+        <TextView
+          android:id="@+id/detail_description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginBottom="8dp"
+          android:text="5 km"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="TIME"
+          android:textColor="#aaa"
+          android:textSize="12sp"/>
+
+        <TextView
+          android:id="@+id/detail_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginBottom="8dp"
+          android:text="5 am to 10 pm"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="ORGANIZATION"
+          android:textColor="#aaa"
+          android:textSize="12sp"/>
+
+        <TextView
+          android:id="@+id/detail_organization"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginBottom="8dp"
+          android:text="N/A"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="HOSTED BY"
+          android:textColor="#aaa"
+          android:textSize="12sp"/>
+
+        <TextView
+          android:id="@+id/detail_host"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Nathan Singh"/>
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</ScrollView>

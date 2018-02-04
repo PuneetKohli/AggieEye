@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.diversityhack.placespace.aggieeye.ProfileActivity">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="230dp">
+
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/puneet"/>
+
+      <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="24dp"
+        android:layout_above="@+id/tv_location"
+        android:shadowColor="#000"
+        android:shadowRadius="2"
+        android:text="Puneet Kohli"
+        android:textColor="#fff"
+        android:textSize="24sp"/>
+
+      <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentBottom="true"
+        android:shadowColor="#000"
+        android:shadowRadius="2"
+        android:text="College Station, TX"
+        android:textColor="#fff"
+        android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:orientation="vertical">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="MY UIN"
+        android:textSize="12sp"/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangular_black_box"
+        android:enabled="false"
+        android:hint="127004735"
+        android:textSize="16sp"/>
+
+      <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="MY PREFERENCES"
+        android:textSize="12sp"/>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangular_black_box">
+
+        <com.cunoraz.tagview.TagView xmlns:tagview="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/tags_allergies"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          tagview:lineMargin="5dp"
+          tagview:tagMargin="5dp"
+          tagview:textPaddingBottom="5dp"
+          tagview:textPaddingLeft="8dp"
+          tagview:textPaddingRight="8dp"
+          tagview:textPaddingTop="5dp"/>
+
+      </FrameLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
